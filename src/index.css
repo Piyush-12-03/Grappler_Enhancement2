@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App-header {
+  background-color: #333; /* Background color for the header */
+  padding: 10px; /* Adjust as needed */
+  display: flex; /* Make the header a flex container */
+  align-items: center; /* Center content vertically */
+}
+h1.logo {
+  margin: 0; /* Remove default margin */
+  font-size: 32px; /* Adjust the font size as needed */
+  color: #fff; /* Text color for the logo */
+  margin-right: auto; /* Push the logo to the left by aligning it to the right end of the container */
+}
+/* Apply gradient animation to the text within the span */
+.gradient-text {
+  background-image: linear-gradient(45deg, #FF9900, #FF3366, #CC33FF, #0099FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveGradient 10s linear infinite;
+}
+.ticket-bg{
+  background-color: #A4DA8F;
+  color: #fff;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* Weekly Planner CSS */
+.weekly-view {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  display: inline-block;
+}
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+}
+.custom-modal .modal-content {
+  border: none;
+  box-shadow: none;
+}
+.custom-modal .modal-header {
+  border: none;
+}
+.custom-modal .modal-footer {
+  border: none;
+}
+.custom-modal .btn-secondary {
+  background: #ddd;
+  color: #333;
+}
+.custom-modal .btn-primary {
+  background: #007BFF;
+  color: #fff;
+}
+
+
+
+

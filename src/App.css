@@ -1,0 +1,297 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Plist
+{
+  font-size: 5px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}.CalendarPage {
+  display: flex;
+}
+.Sidebar {
+  flex: 5; /* Adjust the value to control the width of the sidebar */
+  padding: 10px;
+  background-image: linear-gradient(to bottom right,#13186A,#0037A2,#8885FE)!important;  color: #fff;
+}
+.Calendar {
+  flex: 2; /* Adjust the value to control the width of the calendar */
+}
+.calendar-container {
+  background-color: #FFFFFF;
+  border: 1px solid #3E20C5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.UserCard button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 11px;
+}
+
+.UserCard button:hover {
+  background-color: #6693e6;
+}
+
+/* Add this style for the active state */
+
+
+.userButton{
+  background-color: #314499;
+  color: 'white';
+  padding: '12px 20px';
+  borderRadius: '5px';
+  border: 'none';
+  cursor: 'pointer';
+  fontSize: '16px';
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+h2 {
+  margin: 0;
+}
+
+.close-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ticket-details {
+  font-size: 16px;
+}
+
+/* Additional styling can be applied as needed */
+
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(49, 94, 219);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin: 20px;
+  text-align: center;
+}
+.ticket-card-1{
+background-color: #fff;
+color: #000000;
+font-family: "Noto Sans",sans-serif;
+font-size: 20px;
+border-radius: 10px;
+}
+.ticket-card-1:hover{
+  background-color: #d8d8d8;
+  color: #FFFFFF;
+  font-family: "Noto Sans",sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  }
+.ticket-sub-card {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 9px;
+  cursor: pointer;
+}
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nav-buttons{
+  margin-bottom: 15px;
+}
+.nav-container {
+  display: flex; /* Display the links in a row */
+  align-items: center; /* Center vertically within the container, if needed */
+}
+
+.nav-link {
+  margin-right: 20px; /* Add spacing between the links */
+}
+.ticket-bg{
+  background-image: linear-gradient(to bottom right,#13186A,#0037A2,#8885FE)!important;  color: #fff;
+  color: #fff; 
+}   
+.card-container{
+  box-shadow: inset;
+}
+
+.card-container:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+  /* color */
+}
+/* Apply the same effect to the button inside the card */
+.card-container:hover .btn-zoom {
+  transform: scale(1);
+}
+/* Restyle the button on hover if needed */
+.card-container:hover .btn-zoom:hover {
+  background-color: #333; /* Change background color on button hover */
+  color: #fff; /* Change text color on button hover */
+  background-image: linear-gradient(to bottom right,#13186A,#0037A2,#8885FE)!important;  color: #fff;
+}
+
+.user-button.active {
+  background-color: #3E20C5;
+  color: white;
+  border-style:solid;
+  border-width: 1px;
+}
+
+/* Restyle the button on hover if needed */
+.card-container:hover .btn-zoom:hover {
+  background-color: #333; /* Change background color on button hover */
+  color: #fff; /* Change text color on button hover */
+  border-color: #333; /* Change border color on button hover */
+}
+
+.CalendarPage {
+  display: flex;
+  padding: 15px;
+}
+
+.Sidebar {
+  flex: 0.4; /* Adjust the value to control the width of the sidebar */
+  padding: 10px;
+  background-image: linear-gradient(to bottom right,#13186a,#0037a2,#8885fe)!important;  color: #fff;
+  border-radius: 15px;
+}
+
+.Calendar {
+  flex: 2; /* Adjust the value to control the width of the calendar */
+}
+
+.calendar-container {
+  background-color: #ffffff;
+  border: 1px solid #3e20c5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.UserCard button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 11px;
+}
+
+.UserCard button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.Btn-ticket{
+  margin-bottom: 50px;
+}
+
+.ticket-card {
+  background-color: #0077FF;
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+  color: #FFF;
+  border: 1px solid #134175;
+  border-radius: 10px;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  overflow-y: auto; /* Enable vertical scroll for content */
+  max-height: 700px; /* Maximum height for the card */
+}
+
+
+
+.ticket-card-11 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  /* max-width: 3000px; */
+  color: #000;
+  align-items: center;
+  width: 220px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ticket-card-11:hover{
+  cursor:grab;
+  background-color: #ebebeb
+}
+.nav-buttons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  padding: 5px;
+}
